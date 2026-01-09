@@ -20,6 +20,7 @@ Prusaslicer Printer Startcode:
 - PRINT_START EXTRUDER_TEMP=[first_layer_temperature] BED_TEMP=[first_layer_bed_temperature]
 
 Deutsch
+
 Diese Konfiguration basiert auf der folgenden Config https://github.com/charminULTRA/Klipper-Input-Shaping-MK3S-Upgrade?tab=readme-ov-file. Da dieses Projekt anscheinend nicht mehr gepflegt wird, habe ich meine eigene erstellt, um einige Erkenntnisse zu korrigieren und einige neue Klipper-Möglichkeiten zu berücksichtigen, wie zum Beispiel native adaptive Meshing ohne Kamp. Ich empfehle, die Mk3.5 Klipper-Profile zu verwenden, wie auch im schönen Guide von charminULTRA oben beschrieben. Wie Sie sehen können, sind nur wenige Anpassungen in den Prusaslicer-Profilen erforderlich. Es ist nicht mehr notwendig, die benutzerdefinierten Start-G-Codes in den Filamenteinstellungen von Prusaslicer zu entfernen, da diese Konfiguration die Pressure-Advance-Einstellungen dort interpretieren kann. 
 Änderungen:
 - Neue Purge-Linie, nicht mehr in der Mitte des Druckbetts
