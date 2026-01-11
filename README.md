@@ -35,3 +35,6 @@ Prusaslicer-Drucker Startcode:
 - M190 S0 ; Verhindert, dass Prusaslicer M190 vor den G-Code setzt, wodurch das Makro gestört wird
 - M109 S0 ; Verhindert, dass Prusaslicer M109 vor den G-Code setzt, wodurch das Makro gestört wird
 - PRINT_START EXTRUDER_TEMP=[first_layer_temperature] BED_TEMP=[first_layer_bed_temperature]
+
+
+In der klipper-mk3s-all-in-file-config.txt steht alles drin, damit der MK3S mit dem Repetierserver läuft
