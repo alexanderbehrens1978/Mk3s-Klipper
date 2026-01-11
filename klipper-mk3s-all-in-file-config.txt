@@ -1,6 +1,8 @@
 # Uncomment the necessary items as you walk through this file. Many are already uncommented. Look for TUNE ME for important areas to tune to your specific printer.
 # TUNING STEPS ARE NOT OPTIONAL.
-
+#
+# https://github.com/alexanderbehrens1978/Mk3s-Klipper/blob/main/README.md
+#
 ### UI and Built-in Macros (see macros.cfg for added macros)
 #[include mainsail.cfg]
 #[include fluidd.cfg]
@@ -110,9 +112,6 @@ tachometer_poll_interval: 0.0015
 sensor_type: temperature_host
 min_temp: 10
 max_temp: 80
-
-
-
 
 # Keeps Debug LED off / not floating
 [static_digital_output debug_led]
@@ -288,6 +287,7 @@ microsteps: 16
 ## as the probe algorithms between Prusa and Klipper firmware are slightly different.
 ## Note: Different Z-Offsets for different bed sheets is not yet implemented, but editing this file is a fairly simple method. You can only enable ONE at a time.
 [probe]
+z_offset = 1.385
 #z_offset = 0.870 #Regular bed sheet
 #z_offset = 0.000 #PETG on regular bed sheet, add/delete/edit as needed
 #z_offset = 0.000 #Satin bed sheet, add/delete/edit as needed
