@@ -1,3 +1,12 @@
+Hiermit wird das klipper Firmware auf den Prusa MK3S übertragen sudo avrdude -v -p atmega2560 -c wiring -P /dev/ttyACM0 -b 115200 -D -U flash:w:/home/alex/mk3s-flash/klipper.elf.hex:i
+
+Hiermit wird die Original Firmware wieder hergestellt.
+sudo avrdude -v -p atmega2560 -c wiring -P /dev/ttyACM0 -b 115200 -D -U flash:w:0:/home/alex/mk3s-flash/prusa_mk3s.hex:i
+
+
+
+
+
 This configuration is based on following config https://github.com/charminULTRA/Klipper-Input-Shaping-MK3S-Upgrade?tab=readme-ov-file.
 As this project seems no more maintained, I made my own to correct some findings and respect some new Klipper possibilities as for instance native adaptive meshing without Kamp
 
